@@ -1,8 +1,8 @@
 // Script3.cdc
 
-import FungibleToken from 0x01
-import NonFungibleToken from 0x02
-import Marketplace from 0x03
+import FungibleToken from 0x01cf0e2f2f715450
+import NonFungibleToken from 0x179b6b1cb6755e31
+import Marketplace from 0xf3fcd2c1a78f5eee
 
 // This script checks that the Vault balances and NFT collections are correct
 // for both accounts.
@@ -11,8 +11,8 @@ import Marketplace from 0x03
 // Account 2: Vault balance = 10, NFT ID=1
 pub fun main() {
     // Get the accounts' public account objects
-    let acct1 = getAccount(0x01)
-    let acct2 = getAccount(0x02)
+    let acct1 = getAccount(0x01cf0e2f2f715450)
+    let acct2 = getAccount(0x179b6b1cb6755e31)
 
     // Get references to the account's receivers
     // by getting their public capability

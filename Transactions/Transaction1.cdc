@@ -1,8 +1,8 @@
 // Transaction1.cdc
 
-import FungibleToken from 0x01
-import NonFungibleToken from 0x02
-import Marketplace from 0x03
+import FungibleToken from 0x01cf0e2f2f715450
+import NonFungibleToken from 0x179b6b1cb6755e31
+import Marketplace from 0xf3fcd2c1a78f5eee
 
 // This transaction creates a new Sale Collection object,
 // lists an NFT for sale, puts it in account storage,
@@ -38,4 +38,7 @@ transaction {
         log("Sale Created for account 1. Selling NFT 1 for 10 tokens")
     }
 }
+ 
+
+ 
  

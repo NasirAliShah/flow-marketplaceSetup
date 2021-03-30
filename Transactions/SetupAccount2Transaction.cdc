@@ -1,7 +1,7 @@
 // SetupAccount2Transaction.cdc
 
-import FungibleToken from 0xe03daebed8ca0615
-import NonFungibleToken from 0x045a1763c93006ca
+import FungibleToken from 0x01cf0e2f2f715450
+import NonFungibleToken from 0x179b6b1cb6755e31
 
 // This transaction adds an empty Vault to account 0x02
 // and mints an NFT with id=1 that is deposited into
@@ -29,7 +29,7 @@ transaction {
   }
   execute {
     // Get the recipient's public account object
-    let recipient = getAccount(0xe03daebed8ca0615)
+    let recipient = getAccount(0x01cf0e2f2f715450)
 
     // Get the Collection reference for the receiver
     // getting the public capability and borrowing a reference from it

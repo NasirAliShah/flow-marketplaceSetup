@@ -1,7 +1,7 @@
 // SetupAccount1Transaction.cdc
 
-import FungibleToken from 0xe03daebed8ca0615
-import NonFungibleToken from 0x045a1763c93006ca
+import FungibleToken from 0x01cf0e2f2f715450
+import NonFungibleToken from 0x179b6b1cb6755e31
 
 // This transaction sets up account 0x01 for the marketplace tutorial
 // by publishing a Vault reference and creating an empty NFT Collection.

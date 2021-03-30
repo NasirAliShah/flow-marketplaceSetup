@@ -1,8 +1,7 @@
 // Transaction2.cdc
-
-import FungibleToken from 0x01
-import NonFungibleToken from 0x02
-import Marketplace from 0x03
+import FungibleToken from 0x01cf0e2f2f715450
+import NonFungibleToken from 0x179b6b1cb6755e31
+import Marketplace from 0xf3fcd2c1a78f5eee
 
 // This transaction uses the signers Vault tokens to purchase an NFT
 // from the Sale collection of account 0x01.
@@ -29,7 +28,7 @@ transaction {
 
     execute {
         // get the read-only account storage of the seller
-        let seller = getAccount(0x01)
+        let seller = getAccount(0x01cf0e2f2f715450)
 
         // get the reference to the seller's sale
         let saleRef = seller.getCapability<&AnyResource{Marketplace.SalePublic}>(/public/NFTSale)
@@ -43,4 +42,5 @@ transaction {
         log("Token 1 has been bought by account 2!")
     }
 }
+ 
  

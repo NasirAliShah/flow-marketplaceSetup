@@ -1,7 +1,7 @@
 // CheckSetupScript.cdc
 
-import FungibleToken from 0xe03daebed8ca0615
-import NonFungibleToken from 0x045a1763c93006ca
+import FungibleToken from 0x01cf0e2f2f715450
+import NonFungibleToken from 0x179b6b1cb6755e31
 
 // This script checks that the accounts are set up correctly for the marketplace tutorial.
 //
@@ -9,8 +9,8 @@ import NonFungibleToken from 0x045a1763c93006ca
 // Account 0x02: Vault Balance = 20, No NFTs
 pub fun main() {
     // Get the accounts' public account objects
-    let acct1 = getAccount(0xe03daebed8ca0615)
-    let acct2 = getAccount(0x045a1763c93006ca)
+    let acct1 = getAccount(0x01cf0e2f2f715450)
+    let acct2 = getAccount(0x179b6b1cb6755e31)
 
     // Get references to the account's receivers
     // by getting their public capability
@@ -60,3 +60,4 @@ pub fun main() {
         panic("Wrong Collections!")
     }
 }
+ 
